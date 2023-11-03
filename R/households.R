@@ -4,6 +4,7 @@
 # Joanna R. Pepin
 #-------------------------------------------------------------------------------
 
+# Setup & Packages: !??! ADD LINK TO R SCRIPT HERE WHEN GITHUB IS WORKING !??!
 # Data: https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
 type <- c("One-census family", "Other-census family", "Roommate HH", "1 person")
 year <- c("2001", "2001", "2001", "2001",
