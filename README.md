@@ -4,13 +4,9 @@ Joanna Rae Pepin [\@CoffeeBaseball](https://sciences.social/@CoffeeBaseball) [ww
 
 ## About
 
-------------------------------------------------------------------------
-
 These figures are my effort to learn about Canadian families, with an emphasis on gender and work. You are welcome to use them for your own teaching or learning. You can directly download the figures in .png formats or use the scripts to recreate and modify them as you desire.
 
 ## Figures
-
-------------------------------------------------------------------------
 
 ### Distribution (%) of Household Types in Canada
 
@@ -25,6 +21,8 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 **Roommate HH**: two or more people living together, among which none are part of a census family
 
 **1 person**: one-person household
+
+------------------------------------------------------------------------
 
 ### Family life suffers when the woman has a full-time job
 
