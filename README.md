@@ -25,3 +25,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 **Roommate HH**: two or more people living together, among which none are part of a census family
 
 **1 person**: one-person household
+
+### Family life suffers when the woman has a full-time job
+
+![% of Canadians who agree/disagree/dk if family life suffers when the woman has a full-time job](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/famsuffer.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/famsuffer.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/familysuffers.R)
