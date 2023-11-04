@@ -1,6 +1,10 @@
 # Now You CanadaKnow
 
-Joanna Rae Pepin [\@CoffeeBaseball](https://sciences.social/@CoffeeBaseball) [www.joannapepin.com](www.joannapepin.com)
+Joanna Rae Pepin
+
+[\@CoffeeBaseball](https://sciences.social/@CoffeeBaseball)
+
+[www.joannapepin.com](https://joannapepin.com/)
 
 ## About
 
