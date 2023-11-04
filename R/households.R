@@ -4,8 +4,17 @@
 # Joanna R. Pepin
 #-------------------------------------------------------------------------------
 
-# Setup & Packages: !??! ADD LINK TO R SCRIPT HERE WHEN GITHUB IS WORKING !??!
-# Data: https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
+# Setup & Packages: ------------------------------------------------------------
+# The packages & color palette are available in a separate script that should be
+# run first: https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/00_runfirst.R
+
+
+# Data Source: https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
+
+
+# Variable Processing ----------------------------------------------------------
+
+## Create data
 type <- c("One-census family", "Other-census family", "Roommate HH", "1 person")
 year <- c("2001", "2001", "2001", "2001",
           "2006", "2006", "2006", "2006",
@@ -19,10 +28,12 @@ prop <- c(64.6, 5.9, 3.7, 25.7,
           59.6, 6.6, 4.4, 29.3)
 data <- data.frame(type, year, prop)
 
+## Process variables
 data$type <- factor(data$type, 
                     levels = c("One-census family", "Other-census family", 
                                "Roommate HH", "1 person"), ordered = FALSE)
 
+# Figure -----------------------------------------------------------------------
 hh <- ggplot(data, aes(x = factor(year), y = prop, fill = type, label = prop)) +
   geom_col(position = position_stack(reverse = TRUE),
            width = .5) +
