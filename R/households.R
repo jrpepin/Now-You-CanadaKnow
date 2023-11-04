@@ -9,7 +9,8 @@
 # run first: https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/00_runfirst.R
 
 
-# Data Source: https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
+# Data: ------------------------------------------------------------------------
+# https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
 
 
 # Variable Processing ----------------------------------------------------------
@@ -47,14 +48,14 @@ p <- ggplot(data, aes(x = factor(year), y = prop, fill = type, label = prop)) +
         panel.grid.minor   = element_blank(),
         panel.grid.major.x = element_blank(),
         axis.text.x        = element_blank(),
-        plot.caption       = element_text(hjust=0, colour = "grey",)) +
+        plot.caption       = element_text(hjust=0, colour = "grey", size = 12)) +
   scale_fill_manual(values = c_palette) +
   ggtitle("Distribution (%) of household types in Canada") +
   labs(x        = NULL, 
        y        = NULL,
        fill     = NULL,
        legend   = NULL,
-       caption  = "Joanna R. Pepin | Source: Census of Population 2001 to 2021 (3901)") 
+       caption  = "Joanna R. Pepin chart using Census of Population 2001 to 2021 (3901) data") 
 
 p
 
