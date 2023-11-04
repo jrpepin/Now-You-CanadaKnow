@@ -34,7 +34,7 @@ data$type <- factor(data$type,
                                "Roommate HH", "1 person"), ordered = FALSE)
 
 # Figure -----------------------------------------------------------------------
-hh <- ggplot(data, aes(x = factor(year), y = prop, fill = type, label = prop)) +
+p <- ggplot(data, aes(x = factor(year), y = prop, fill = type, label = prop)) +
   geom_col(position = position_stack(reverse = TRUE),
            width = .5) +
   # Set the position to its complementary
@@ -56,6 +56,6 @@ hh <- ggplot(data, aes(x = factor(year), y = prop, fill = type, label = prop)) +
        legend   = NULL,
        caption  = "Joanna R. Pepin | Source: Census of Population 2001 to 2021 (3901)") 
 
-hh
+p
 
-ggsave("hh.png", path = figDir, hh, width = 9, height = 6, dpi = 300, bg = 'white')
+ggsave("hh.png", path = figDir, p, width = 9, height = 6, dpi = 300, bg = 'white')
