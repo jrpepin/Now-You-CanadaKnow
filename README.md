@@ -12,8 +12,6 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 
 ## Figures
 
-### Distribution (%) of Household Types in Canada
-
 ![Distribution (%) of Household Types in Canada](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/hh.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/hh.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/households.R)
 
 #### Definitions:
@@ -27,7 +25,5 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 **1 person**: one-person household
 
 ------------------------------------------------------------------------
-
-### Family life suffers when the woman has a full-time job
 
 ![% of Canadians who agree/disagree/dk if family life suffers when the woman has a full-time job](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/famsuffer.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/famsuffer.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/familysuffers.R)
