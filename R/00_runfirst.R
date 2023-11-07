@@ -25,7 +25,8 @@ pacman::p_load(
   data.table, #
   gtsummary,  # pretty weighted tables
   ggplot2,    # graphing
-  colorspace, # color palettes   
+  colorspace, # color palettes  
+  scales,     # format axes
   conflicted) # choose default packages
 
 # Address any conflicts in the packages
