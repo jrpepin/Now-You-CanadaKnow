@@ -56,6 +56,6 @@ if (!dir.exists(here::here(figDir))){
 
 ## Define color palette
 c_palette <- c("#20c997",
-               "#3498db",
-               "#fd7e14",
+               "#3498DB",
+               "#F39C12",
                "#e74c3c")
