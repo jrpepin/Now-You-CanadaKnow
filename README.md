@@ -35,3 +35,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 #### Definitions:
 
 [**Stay-at-home parent**](https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2016007-eng.htm#def1): a person in a couple family with at least one child under the age of 16 at home, who did not have a job or business, was not looking for work, was not attending school, and was not permanently unable to work during the survey reference week; parents on maternity or parental leave are not considered to be stay-at-home parents if they have a job to which they will return---they are considered employed and absent from work.
+
+------------------------------------------------------------------------
+
+![Attitudes about mixed-race relationships](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/marrace.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/marrace.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/marrace.R)
