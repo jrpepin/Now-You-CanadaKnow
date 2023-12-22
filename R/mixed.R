@@ -36,12 +36,12 @@ p <- ggplot(data, aes(x = factor(type), y = prop, fill = colors, label = prop)) 
   # Set the position to its complementary
   geom_text(show.legend = FALSE, color = "#7b8a8b", vjust=-0.25) +
   facet_grid(col = vars(group), scales = "free_x") +
-  theme_minimal(base_size = 20) +
+  theme_minimal(base_size = 22) +
   theme(legend.position    = "none",
         panel.grid.minor   = element_blank(),
         panel.grid.major.x = element_blank(),
         axis.text.y        = element_blank(),
-        axis.text.x        = element_text(angle = 35, vjust = 1.2, hjust=1, size = 12),
+        axis.text.x        = element_text(angle = 35, vjust = 1.2, hjust=1, size = 14),
         plot.subtitle      = element_text(face = "italic"),
         plot.caption       = element_text(hjust=0, colour = "grey", size = 12)) +
   scale_fill_manual(values = c("#3498DB",  "#20c997", "#b4bcc2")) +
@@ -55,4 +55,4 @@ Family; NOTE: exludes 'multiple visible minority statuses', 'visible minority no
 with Aboriginal ancestry")
 p
 
-ggsave("mixed.png", path = figDir, p, width = 9, height = 6, dpi = 300, bg = 'white')
+ggsave("mixed.png", path = figDir, p, width = 9, height = 6.5, dpi = 300, bg = 'white')
