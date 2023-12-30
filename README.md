@@ -43,3 +43,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 ------------------------------------------------------------------------
 
 ![Distribution of individuals in different types of unions](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/mixed.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/mixed.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/mixed.R)
+
+------------------------------------------------------------------------
+
+![Gini Index for Canada and the U.S.](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/gini.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/gini.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/gini.R)
