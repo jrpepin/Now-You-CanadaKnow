@@ -47,3 +47,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 ------------------------------------------------------------------------
 
 ![Gini Index for Canada and the U.S.](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/gini.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/gini.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/gini.R)
+
+------------------------------------------------------------------------
+
+![Distribution of childhood situations by class identity](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/class.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/class.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/class.R)
