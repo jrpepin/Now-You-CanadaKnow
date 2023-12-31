@@ -47,6 +47,7 @@ p <- ggplot(data, aes(x = year, y = gini, color = country)) +
         plot.caption       = element_text(hjust=0, colour = "grey", size = 12)) +
   scale_y_continuous(label=comma, breaks = seq(from = 30, to = 45, by = 5), limits = c(30,45)) +
   scale_x_continuous(breaks = seq(from = 1965, to = 2020, by = 10), limits = c(1960,2021)) +
+  scale_color_manual(values = c( "#e74c3c", "#3498DB")) +
   labs(x        = NULL, 
        y        = NULL,
        fill     = NULL,
