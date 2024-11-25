@@ -12,9 +12,6 @@
 # Data: ------------------------------------------------------------------------
 # https://www150.statcan.gc.ca/n1/daily-quotidien/220713/g-a004-eng.htm
 
-
-# Variable Processing ----------------------------------------------------------
-
 ## Create data
 type <- c("One-census family", "Other-census family", "Roommate HH", "1 person")
 year <- c("2001", "2001", "2001", "2001",
@@ -28,6 +25,8 @@ prop <- c(64.6, 5.9, 3.7, 25.7,
           61.2, 6.5, 4.1, 28.2,
           59.6, 6.6, 4.4, 29.3)
 data <- data.frame(type, year, prop)
+
+# Variable Processing ----------------------------------------------------------
 
 ## Process variables
 data$type <- factor(data$type, 

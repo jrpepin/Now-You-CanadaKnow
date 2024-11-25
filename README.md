@@ -4,7 +4,7 @@ Joanna Rae Pepin
 
 [\@CoffeeBaseball on Mastodon](https://sciences.social/@CoffeeBaseball)
 
-[@joannapepin.bsky.social](https://bsky.app/profile/joannapepin.bsky.social)
+[\@joannapepin.bsky.social](https://bsky.app/profile/joannapepin.bsky.social)
 
 [www.joannapepin.com](https://joannapepin.com/)
 
