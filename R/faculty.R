@@ -28,25 +28,33 @@ df <- data %>%
     gender =  Gender,
     value  =  VALUE) %>%
   select(year, geo, rank, gender, value) %>%
-## Make year continuous
-  mutate(year = case_when(
-    year == "2019/2020" ~ 2020,
-    year == "2020/2021" ~ 2021,
-    year == "2021/2022" ~ 2022,
-    year == "2022/2023" ~ 2023,
-    year == "2023/2024" ~ 2024))
+  mutate(
+  ## Make year continuous
+    year = case_when(
+      year == "2019/2020" ~ 2020,
+      year == "2020/2021" ~ 2021,
+      year == "2021/2022" ~ 2022,
+      year == "2022/2023" ~ 2023,
+      year == "2023/2024" ~ 2024),
+  ## Make rank two lines
+    rank = case_when(
+      rank == "Total rank"          ~ "Total\nrank",
+      rank == "Full professor"      ~ "Full\nprofessor",
+      rank == "Associate professor" ~ "Associate\nprofessor",
+      rank == "Assistant professor" ~ "Assistant\nprofessor",
+      rank == "Other ranks"         ~ "Other\nranks"))
 
 # Rank order
 df$rank <- factor(df$rank, 
-                       levels = c("Total rank", 
-                                  "Full professor",
-                                  "Associate professor",
-                                  "Assistant professor", 
-                                  "Other ranks"), ordered = F)
+                       levels = c("Total\nrank", 
+                                  "Full\nprofessor",
+                                  "Associate\nprofessor",
+                                  "Assistant\nprofessor", 
+                                  "Other\nranks"), ordered = F)
 
 # Figure -----------------------------------------------------------------------
 p <- df %>%
-  filter(geo == "Canada" & gender != "Total gender" & rank != "Total rank") %>%
+  filter(geo == "Canada" & gender != "Total gender" & rank != "Total\nrank") %>%
 ggplot(aes(x = year, y = value, fill = gender)) +
   geom_col(position = position_stack(),
            width = .5) +
