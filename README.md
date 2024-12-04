@@ -53,3 +53,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 ------------------------------------------------------------------------
 
 ![Distribution of childhood situations by class identity](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/class.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/class.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/class.R)
+
+------------------------------------------------------------------------
+
+![Proportion of women faculty at Canadian universities](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/faculty.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/faculty.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/faculty.R)
