@@ -57,3 +57,7 @@ These figures are my effort to learn about Canadian families, with an emphasis o
 ------------------------------------------------------------------------
 
 ![Proportion of women faculty at Canadian universities](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/faculty.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/faculty.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/faculty.R)
+
+------------------------------------------------------------------------
+
+![Canada’s Transgender and Non-Binary Population](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/transgender.png?raw=true) [download](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/figs/transgender.png) \| [code](https://github.com/jrpepin/Now-You-CanadaKnow/blob/main/R/transgender.R)
