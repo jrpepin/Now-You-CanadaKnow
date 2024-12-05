@@ -16,9 +16,9 @@ data <- cansim::get_cansim("37-10-0144") %>%
   dplyr::rename(
     year   = REF_DATE,
     geo    = GEO,
-    rank   =  Rank,
-    gender =  Gender,
-    value  =  VALUE) %>%
+    rank   = Rank,
+    gender = Gender,
+    value  = VALUE) %>%
   filter(
     Statistics == "Proportion of full-time academic staff by gender",
     gender != "Non-binary person and Unknown gender") %>%
