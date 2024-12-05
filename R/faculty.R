@@ -15,12 +15,10 @@
 
 data <- read.csv("data/3710014403_databaseLoadingData.csv")
 
-
 # Variable Processing ----------------------------------------------------------
 
 ## Create a new df containing only the variables of interest.  
 df <- data %>%
-  # Create an ID variable
   dplyr::rename(
     year   = REF_DATE,
     geo    = GEO,

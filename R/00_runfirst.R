@@ -17,6 +17,7 @@ library("pacman")                  # Load pacman package
 pacman::p_load(
   here,       # relative file paths
   readxl,     # import excel data tables
+  cansim,     # import Statistics Canada data
   dplyr,      # variable processing
   tidyr,      # reshaping data
   forcats,    # reverse factor variables

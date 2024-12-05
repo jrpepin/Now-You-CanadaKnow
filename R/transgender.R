@@ -12,20 +12,31 @@
 # Data: ------------------------------------------------------------------------
 # https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810003601
 
-group  <- c("Cisgender women", "Cisgender women", 
-            "Cisgender men", "Cisgender men",
-            "Non-binary persons", "Non-binary persons", 
-            "Transgender women", "Transgender women", 
-            "Transgender men", "Transgender men")
-agecat <- c("15-34", "35+", "15-34", "35+", "15-34", "35+", "15-34", "35+", "15-34", "35+")
-prop   <- c(4400000, 11000000, 4600000, 10200000, 31300, 10100, 13600, 18000, 17700, 10200)
-data   <- data.frame(group, agecat, prop)
+data <- cansim::get_cansim("98-10-0036") %>%
+  dplyr::rename(
+  year   = "REF_DATE",
+  geo    = "GEO",
+  agecat = "Broad age groups (3)",
+  group  = "Gender (8)",
+  prop   = "VALUE")
 
 # Variable Processing ----------------------------------------------------------
 
+data <- data %>%
+  filter(
+    geo == "Canada" & 
+    agecat != "Total - Age" &
+    (group == "Transgender men" | 
+      group ==  "Transgender women" |
+      group ==  "Non-binary persons")) %>%
+  ## Make short age labels
+  mutate(
+    agecat = case_when(
+      agecat == "15 to 34 years"    ~ "15-34",
+      agecat == "35 years and over" ~ "35+"))
+
 data$group <- factor(data$group, 
-                     levels = c("Cisgender women", "Cisgender men", 
-                                "Non-binary persons","Transgender women", 
+                     levels = c("Non-binary persons","Transgender women", 
                                 "Transgender men"), ordered = FALSE)
 
 data$agecat <- factor(data$agecat, 
