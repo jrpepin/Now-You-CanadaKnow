@@ -11,21 +11,23 @@
 
 # Data: ------------------------------------------------------------------------
 # https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710014403
-## download options --> CSV download selected data (for database loading)
 
-data <- read.csv("data/3710014403_databaseLoadingData.csv")
-
-# Variable Processing ----------------------------------------------------------
-
-## Create a new df containing only the variables of interest.  
-df <- data %>%
+data <- cansim::get_cansim("37-10-0144") %>%
   dplyr::rename(
     year   = REF_DATE,
     geo    = GEO,
     rank   =  Rank,
     gender =  Gender,
     value  =  VALUE) %>%
-  select(year, geo, rank, gender, value) %>%
+  filter(
+    Statistics == "Proportion of full-time academic staff by gender",
+    gender != "Non-binary person and Unknown gender") %>%
+  select(year, geo, rank, gender, value)
+
+# Variable Processing ----------------------------------------------------------
+
+## Create a new df containing only the variables of interest.  
+df <- data %>%
   mutate(
   ## Make year continuous
     year = case_when(
@@ -40,7 +42,9 @@ df <- data %>%
       rank == "Full professor"      ~ "Full\nprofessor",
       rank == "Associate professor" ~ "Associate\nprofessor",
       rank == "Assistant professor" ~ "Assistant\nprofessor",
-      rank == "Other ranks"         ~ "Other\nranks"))
+      rank == "Other ranks"         ~ "Other\nranks")) %>%
+  ## Keep only recent years
+  drop_na(year)
 
 # Rank order
 df$rank <- factor(df$rank, 
